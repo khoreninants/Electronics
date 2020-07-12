@@ -68,8 +68,8 @@
               <div class="dropdown-menu rounded-0 header_drp_div" aria-labelledby="dropdownMenu2">
                 <button class="dropdown-item lead account_drp" type="button" data-toggle="modal" data-target="#loginmodal">Login</button>
                 <button class="dropdown-item lead account_drp" type="button" data-toggle="modal" data-target="#registermodal">Register</button>
-                <button class="dropdown-item lead account_drp" type="button">My Orders</button>
-                <button class="dropdown-item lead account_drp" type="button">Account Settings</button>
+                <a href="orders.html"><button class="dropdown-item lead account_drp" type="button">My Orders</button></a>
+                <a href="settings.html"><button class="dropdown-item lead account_drp" type="button">Account Settings</button></a>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@
   </div>
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 </div>
-<button type="button" class="btn btn-primary">Add To Cart</button>
+<a href="cart.html"><button type="button" class="btn btn-primary">Add To Cart</button></a>
 
 <div class="custom-control custom-switch">
   <input type="checkbox" class="custom-control-input" id="customSwitch1">
@@ -227,13 +227,13 @@
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
           More Information
         </button>
       </h2>
     </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+    <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
        Cases can come in many different sizes (known as form factors). The size and shape of a computer case is usually determined by the form factor of the motherboard, since it is the largest component of most computers. Consequently, personal computer form factors typically specify only the internal dimensions and layout of the case. Form factors for rack-mounted and blade servers may include precise external dimensions as well, since these cases must themselves fit in specific enclosures.
       </div>
@@ -255,7 +255,7 @@
 <h1 class="text-center">You May Also Like</h1>
 <br><br>
 
-<div class="cotainer">
+<div class="container-fluid">
   <div class="row ">
     
   <div class="col-4">
@@ -264,7 +264,7 @@
   <div class="card-body">
     <h5 class="card-title">ATX Tower Case</h5>
     <p class="card-text">Gaming PC case new cool design gaming aigo F10 computer ATX tower case desktop computer 2018 newest desktop pc case <br><br>$23.00 - $35.00 </p>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
+    <a href="cart.html" class="btn btn-primary">Add To Cart</a>
   </div>
 </div>
 </div>
@@ -274,7 +274,7 @@
   <div class="card-body">
     <h5 class="card-title">ATX Tower Case</h5>
     <p class="card-text">Gaming PC case new cool design gaming aigo F10 computer ATX tower <br>case desktop computer 2018 newest desktop pc case <br><br>$23.00 - $35.00 .</p>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
+    <a href="cart.html" class="btn btn-primary">Add To Cart</a>
   </div>
 </div>
 </div>
@@ -284,7 +284,7 @@
   <div class="card-body">
     <h5 class="card-title">ATX Tower Case</h5>
     <p class="card-text">Gaming PC case new cool design gaming aigo F10 computer ATX tower case desktop computer 2018 newest desktop pc case <br><br>$23.00 - $35.00 </p>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
+    <a href="cart.html" class="btn btn-primary">Add To Cart</a>
   </div>
 </div>
 </div>
@@ -352,6 +352,87 @@
           <li class="list-group-item text-light bg-secondary"><a href="#" class="text-decoration-none text-light">Accessories</a></li>
         </ul>
       </div>
+
+
+
+      <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control border-dark" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-primary">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="registermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted ">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control border-dark" id="exampleInputPassword1">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control border-dark" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
